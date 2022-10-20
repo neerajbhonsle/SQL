@@ -1,0 +1,16 @@
+CREATE DATABASE DEVELOPER_DETAILS;
+USE DEVELOPER_DETAILS;
+CREATE TABLE DEVELOPER_DETAILS(SLNO int,DEVELOPER_name varchar(50),DEVELOPER_PHONE_NUM bigint, DEVELOPER_ID_NUM varchar(30),DEVELOPER_INTERVIEW_DATE date,DEVELOPER timestamp,DEVELOPER_BY varchar(50));
+ALTER TABLE DEVELOPER_DETAILS ADD COLUMN PLACE varchar(50) DEFAULT 'Xworkz'
+ALTER TABLE DEVELOPER_DETAILS RENAME COLUMN place TO PLACE;
+INSERT INTO DEVELOPER_DETAILS VALUE(1,"DEVELOPER_name",852147963,'Neeraj481',current_date(),current_time(),now());
+INSERT INTO DEVELOPER_DETAILS VALUE(2,"neeraj ",9481016104,'neeraj481',current_date(),current_time(),now());
+INSERT INTO DEVELOPER_DETAILS VALUE(3,"ganesh",9863837297,'gani006',current_date(),current_time(),now());
+INSERT INTO DEVELOPER_DETAILS VALUE(4,"punith",939470575,'puni253041',current_date(),current_time(),now());
+INSERT INTO DEVELOPER_DETAILS VALUE(5,"adarsh",329857957,'adu1347',current_date(),current_time(),now());
+INSERT INTO DEVELOPER_DETAILS VALUE(6,"jayath",343557963,'jaya22',current_date(),current_time(),now());
+INSERT INTO DEVELOPER_DETAILS VALUE(7,"Dini",842394863,'dini03',current_date(),current_time(),now());
+INSERT INTO DEVELOPER_DETAILS VALUE(8,"naveen",9938453670,'navi903',current_date(),current_time(),now());
+INSERT INTO DEVELOPER_DETAILS VALUE(9,"umer",99398435345,'umer325336',current_date(),current_time(),now());
+INSERT INTO DEVELOPER_DETAILS VALUE(10,"ballu",993423475,'ballu43541',current_date(),current_time(),now());
+SELECT * FROM DEVELOPER_DETAILS;
